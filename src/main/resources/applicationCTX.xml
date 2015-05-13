@@ -50,4 +50,6 @@
 		</property>
 	</bean>
 
+	<bean id="pencil" class="com.hadeslee.ex5.Pencil6B"/>
+
 </beans>
