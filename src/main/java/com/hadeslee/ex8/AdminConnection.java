@@ -10,7 +10,25 @@ public class AdminConnection implements EnvironmentAware, InitializingBean, Disp
 	private Environment env;
 	private String adminId;
 	private String adminPw;
-	
+	private String sub_adminId;
+	private String sub_adminPw;
+
+	public String getSub_adminId() {
+		return sub_adminId;
+	}
+
+	public void setSub_adminId(String sub_adminId) {
+		this.sub_adminId = sub_adminId;
+	}
+
+	public String getSub_adminPw() {
+		return sub_adminPw;
+	}
+
+	public void setSub_adminPw(String sub_adminPw) {
+		this.sub_adminPw = sub_adminPw;
+	}
+
 	@Override
 	public void setEnvironment(Environment env) {
 		System.out.println("setEnvironment()");
