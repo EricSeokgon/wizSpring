@@ -13,4 +13,41 @@
 		<property name="secondNum" value="2"></property>
 	</bean>
 
+	<bean id="bmiCalcaulator" class="com.hadeslee.ex4.BMICalculator">
+		<property name="lowWeight">
+			<value>18.5</value>
+		</property>
+		<property name="normal">
+			<value>23</value>
+		</property>
+		<property name="overWeight">
+			<value>25</value>
+		</property>
+		<property name="obesity">
+			<value>30</value>
+		</property>
+	</bean>
+
+	<bean id="myInfo" class="com.hadeslee.ex4.MyInfo">
+		<property name="name">
+			<value>홍길동</value>
+		</property>
+		<property name="height">
+			<value>187</value>
+		</property>
+		<property name="weight">
+			<value>84</value>
+		</property>
+		<property name="hobbys">
+			<list>
+				<value>수영</value>
+				<value>요리</value>
+				<value>독서</value>
+			</list>
+		</property>
+		<property name="bmiCalculator">
+			<ref bean="bmiCalcaulator"/>
+		</property>
+	</bean>
+
 </beans>
