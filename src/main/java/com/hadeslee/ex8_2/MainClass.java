@@ -22,7 +22,7 @@ public class MainClass {
 		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
 		ctx.getEnvironment().setActiveProfiles(config);
 		ctx.load("applicationCTX_dev.xml", "applicationCTX_run.xml");
-		
+		ctx.refresh();
 		
 		ServerInfo info = ctx.getBean("serverInfo", ServerInfo.class);
 		System.out.println("ip : " + info.getIpNum());
