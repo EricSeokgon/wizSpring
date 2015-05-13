@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	   xmlns:context="http://www.springframework.org/schema/context"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
 
 	<bean id="calculator" class="com.hadeslee.ex3.Calculator" />
 	
@@ -80,16 +81,16 @@
 	<bean class="com.hadeslee.ex6.ApplicationConfig" />
 
 	<bean id="student2" class="com.hadeslee.ex6.Student">
-		<constructor-arg value="홍길순"></constructor-arg>
+		<constructor-arg value="홍길순3"></constructor-arg>
 		<constructor-arg value="30"></constructor-arg>
 		<constructor-arg >
 			<list>
-				<value>마라톤</value>
-				<value>요리</value>
+				<value>마라톤3</value>
+				<value>요리3</value>
 			</list>
 		</constructor-arg>
-		<property name="height" value="190" />
-		<property name="weight" value="70" />
+		<property name="height" value="193" />
+		<property name="weight" value="73" />
 	</bean>
 
 </beans>
