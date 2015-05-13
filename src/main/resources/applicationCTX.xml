@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="calculator" class="com.hadeslee.ex3.Calculator" />
+	
+	<bean id="myCalculator" class="com.hadeslee.ex3.MyCalculator">
+		<property name="calculator">
+			<ref bean="calculator"/>
+		</property>
+		<property name="firstNum" value="10" />
+		<property name="secondNum" value="2"></property>
+	</bean>
+
+</beans>
