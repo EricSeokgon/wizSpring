@@ -4,8 +4,10 @@ import java.util.ArrayList;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.ImportResource;
 
 @Configuration
+@ImportResource("classpath:applicationCTX.xml")
 public class ApplicationConfig {
 
 	@Bean
